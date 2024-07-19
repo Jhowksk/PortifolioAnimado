@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.root{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 99vh;
+    flex-direction: column;
+}
+button{
+    width: 12vw;
+    height: 8vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    color: white;
+    border: 2px solid white;
+    background-color: black;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 10vh;
+    background-color: black;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    width: 41vw;
+    color: white;
+    margin-bottom: 2px;
+}
+.options{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: 5px;
+    cursor: pointer;
+    width: 80vw;
+    height: 100%;
+}
+.options li{
+    list-style: none;
+    width: 130px;
+    padding: 5px;
+    background-color: white;
+}
+.options li a{
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+}
+.main{
+    background-color: red;
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: linear-gradient(30deg, white, black, aqua);
+}
+.content{
+    width: 99vw;
+    height: 78vh;
+    padding: 10px;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    font-size: 60px;
+}
+.footer{
+   background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 9.2vh;
+}
+
