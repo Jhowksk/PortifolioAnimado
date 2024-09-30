@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.root{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 99vh;
+    flex-direction: column;
+}
+button{
+    width: 12vw;
+    height: 8vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    letter-spacing: 5px;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    background-color: black;
+    box-shadow: aqua 2px 2px 1000px 80px;
+    animation: efeitoPiscar 1.5s alternate-reverse infinite;
+}
+button:hover{
+    border: 2px solid white;
+    cursor: pointer;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 10vh;
+    background-color: black;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    width: 41vw;
+    color: white;
+    margin-bottom: 2px;
+}
+.options{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: 5px;
+    cursor: pointer;
+    width: 80vw;
+    height: 100%;
+}
+.options li{
+    list-style: none;
+    width: 130px;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: black;
+    opacity: 0.7;
+    font-size: 12px;
+    box-shadow: aqua 1px 1px 15px 1px;
+}
+.options li a{
+    text-decoration: none;
+    color: white;
+}
+.options li:hover{
+    background-color: aqua;
+    color: black;
+    opacity: 1;
+    box-shadow: none;
+    transition: all 0.5s ease-in-out;
+}
+.mainIndex{
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: all 2s ease-in-out;
+}
+.main{
+    background-color: red;
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: all 2s ease-in-out;
+    background: linear-gradient(30deg, aqua,aqua,aqua, black, aqua, aqua);
+    background-size: 300%;
+    animation: AnimarBorda 6s linear alternate infinite;
+    border-radius: 10px;
+}
+.rgb{
+    border-radius: 10px;
+}
+@keyframes AnimarBorda{
+    0% {
+        background-position: 0%;
+    }
+
+    100%{
+        background-position: 300%;
+    }
+}
+@keyframes efeitoPiscar {
+    0% {
+        box-shadow: aqua 1px 1px 100px 20px;
+    }
+    
+    100%{
+        box-shadow: aqua 1px 1px 5px 5px;
+    }
+}
+.content{
+    width: 99vw;
+    height: 78vh;
+    border-radius: 8px;
+    padding: 10px;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    font-size: 60px;
+}
+.footer{
+   background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 9.2vh;
+    letter-spacing: 20px;
+}
+.footer i{
+    cursor: pointer;
+}
+
