@@ -9,12 +9,10 @@ a{
 }
 .root{
     background-color: black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     width: 100vw;
-    height: 99vh;
-    flex-direction: column;
+    max-width: 1920px;
+    height: auto;
+    border-radius: 20px;
 }
 button{
     width: 12vw;
@@ -26,8 +24,8 @@ button{
     border: none;
     border-radius: 20px;
     background-color: black;
-    box-shadow: aqua 2px 2px 1000px 80px;
-    animation: efeitoPiscar 1.5s alternate-reverse infinite;
+    box-shadow: aqua 2px 2px 300px 60px;
+    animation: efeitoPiscar 1.2s alternate-reverse infinite;
 }
 button:hover{
     border: 2px solid white;
@@ -36,20 +34,25 @@ button:hover{
 .navbar{
     display: flex;
     align-items: center;
-    justify-content: center;
-    width: 100vw;
+    text-align: center;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 1980px;
     height: 10vh;
-    background-color: black;
+    margin: auto;
+    
 }
 .logo{
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    height: 100%;
     width: 41vw;
     color: white;
     margin-bottom: 2px;
+    font-size: 30px;
+    animation: efeitoEntrada 1.5s forwards;
+
 }
 .options{
     display: flex;
@@ -58,27 +61,33 @@ button:hover{
     text-align: center;
     letter-spacing: 5px;
     cursor: pointer;
-    width: 80vw;
+    width: 100%;
+    max-width: 1920px;
     height: 100%;
 }
 .options li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
     list-style: none;
-    width: 130px;
-    padding: 5px;
+    width: 100%;
+    height: 25px;
     border-radius: 10px;
     cursor: pointer;
     background-color: black;
     opacity: 0.7;
     font-size: 12px;
-    box-shadow: aqua 1px 1px 15px 1px;
+    box-shadow: aqua 1px 1px 10px 1px;
 }
 .options li a{
     text-decoration: none;
     color: white;
+    font-size: 15px;
 }
 .options li:hover{
-    background-color: aqua;
-    color: black;
+    background-color: rgb(0, 255, 255, 0.8);
     opacity: 1;
     box-shadow: none;
     transition: all 0.5s ease-in-out;
